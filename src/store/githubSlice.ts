@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { Issue } from "../issueTypes";
+import { Issue } from "../types/issueTypes";
 
 export type IssueState = {
   todo: Issue[];
