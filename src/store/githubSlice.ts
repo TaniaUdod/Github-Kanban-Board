@@ -5,14 +5,15 @@ export type IssueState = {
   todo: Issue[];
   inProgress: Issue[];
   done: Issue[];
+  [key: string]: Issue[];
 };
 
-interface RootState {
+interface State {
   repoUrl: string;
   issues: IssueState;
 }
 
-const initialState: RootState = {
+const initialState: State = {
   repoUrl: "",
   issues: {
     todo: [],
