@@ -7,7 +7,6 @@ import { Issue } from "./types/issueTypes";
 import { formatNumber } from "./helpers/formatNumber";
 import DragNDropWrapper from "./components/DragNDropWrapper";
 import { Button, Input } from "antd";
-import "./App.css";
 
 const App: FC = () => {
   const dispatch = useAppDispatch();
