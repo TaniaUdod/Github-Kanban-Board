@@ -1,6 +1,7 @@
 {
   "name": "github-kanban-board",
   "version": "0.1.0",
+  "homepage": "https://TaniaUdod.github.io/github-kanban-board",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
@@ -23,6 +24,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -49,6 +52,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.24.4",
     "@babel/preset-react": "^7.24.1",
-    "babel-jest": "^29.7.0"
+    "babel-jest": "^29.7.0",
+    "gh-pages": "^6.1.1"
   }
 }
